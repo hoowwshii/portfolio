@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements - Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="index.html#contact-info">Contact Info</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="achievements-list">
+    <h2>My Achievements</h2>
+    <div class="achievement-item">
+      <div class="achievement-content">
+        <h3>1st on National Science Olympiad - Informatics Regency/City Level</h3> <!-- add more about this later-->
+        <p>Achieved first place in 2023 National Science Olympiad for Informatics at Regency/City level. Representing regency for the provincial level.</p>
+      </div>
+    </div>
+    <div class="achievement-item">
+      <div class="achievement-content">
+        <h3>Essay Author for Senior High School Final Project</h3>
+        <p>Author of <i>"Unveiling the Efficiency Code: The Undeniable Role of Time Complexity in Algorithm Power"</i>. Breakdown the role of time complexity in determining the algorithm running time.</p>
+      </div>
+    </div>
+    <div class="achievement-item">
+      <div class="achievement-content">
+        <h3>Co-authored a paper for National-Level Research Competition</h3>
+        <p>Implementing IoT as fire detection system and air quality monitoring device. Implement the system using Arduino and ESP. Leading the research for a paper for national-level research competition. </p>
+      </div>
+    </div>
+    <div class="achievement-item">
+      <div class="achievement-content">
+        <h3>Best Student Award</h3>
+        <p>Received the Best Student Award for outstanding academic performance and extracurricular contributions.</p>
+        <a href="#" class="learn-more">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+
+    /* Achievements List Styles */
+.achievements-list {
+    padding: 3rem 1rem;
+    text-align: left;
+    background-color: rgb(255, 241, 213);
+  }
+  
+  .achievement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    border-radius: 5px;
+    text-align: left !important;
+  }
+  
+  .achievement-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0; /* Prevents the icon from shrinking */
+  }
+  
+  .achievement-content {
+    flex-grow: 1;
+  }
+  
+  .achievement-content h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .achievement-content p {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .learn-more {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+ 
+</style>
