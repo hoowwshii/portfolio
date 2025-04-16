@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Achievements - Portfolio Website</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css">
 </head>
 <body>
   <!-- Header Section -->
@@ -13,7 +14,7 @@
       <div class="menu-icon" id="menu-icon">&#9776;</div>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="achievements.html">About me</a></li>
         <li><a href="index.html#contact-info">Contact Info</a></li>
       </ul>
     </nav>
@@ -42,18 +43,17 @@
     </div>
     <div class="achievement-item">
       <div class="achievement-content">
-        <h3>Best Student Award</h3>
-        <p>Received the Best Student Award for outstanding academic performance and extracurricular contributions.</p>
-        <a href="#" class="learn-more">Learn More</a>
+        <h3>Website project</h3>
+        <p>Personal website project. Creating front-end website utilizing HTML, CSS, and Javascript to presents my works throughout the year. This portfolio website.</p>
       </div>
-    </div>
+    </div> 
   </section>
-
+<!-- i can classify this website as a project too. list it as first project for fornt end website. look at dm for myself --> 
   <!-- Footer Section -->
   <footer class="footer">
     <p>&copy; 2025 Your Name. All Rights Reserved.</p>
   </footer>
-
+  <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/id/album/one-of-these-nights/1092931330?i=1092931408"></iframe>
   <script src="script.js"></script>
 </body>
 </html>
@@ -62,9 +62,13 @@
 
     /* Achievements List Styles */
 .achievements-list {
-    padding: 3rem 1rem;
+    margin: 3rem 3rem;
     text-align: left;
-    background-color: rgb(255, 241, 213);
+    /* background-color: rgb(255, 241, 213); */
+    width: 65vw;
+    font-family: "Computer Modern Serif", serif !important;
+    font-size: 16px;
+    font-weight: 600;
   }
   
   .achievement-item {
@@ -73,7 +77,6 @@
     gap: 1rem;
     margin-bottom: 2rem;
     padding: 1rem;
-
     border-radius: 5px;
     text-align: left !important;
   }
@@ -107,5 +110,9 @@
     border-radius: 5px;
   }
   
- 
+ @media (max-width:768px) {
+  .achievements-list{
+    width: 100%;
+  }
+ }
 </style>
