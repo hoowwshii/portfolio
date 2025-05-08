@@ -3,6 +3,7 @@
     --secondary-color: rgb(158, 198, 243);
     --bg-color: rgb(255, 241, 213);
     --tertiary-color: rgb(189, 221, 228);
+    --accent-color: #3d5afe;
 }
 
 * {
@@ -40,7 +41,8 @@
   .nav-links {
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 1.5rem;
+    padding-right: 1.2rem;
   }
  
   .nav-links a {
@@ -57,8 +59,10 @@
   /* Hero Section */
   .hero {
     padding: 5rem 1rem;
-    background-color: #e9ecef;
+    /* background-color: #e9ecef; */
+    background: linear-gradient(120deg, #fff8ed, #fff);
     min-height: 95vh;
+    color: #555;
   }
   
 .hero-content{
@@ -104,6 +108,7 @@
     padding: 3rem 1rem;
     text-align: center;
     background-color: var(--bg-color);
+    
     height: 35rem;
   }
   .skill-group{
@@ -122,14 +127,21 @@
     grid-row: 3;
 }
   .skill-item {
-    background-color: var(--secondary-color);
-    color: black;
+    background-color: #c7e5f7;
+    /* background-color: white; */
+    /* border: rgb(208 208 210) solid 1px; */
+    color: #0a3d62;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
+    border-radius: 27px;
     font-weight: bold;
     text-align: center;
+    transition: transform 0.2s, background-color 0.2s;
   }
-  
+  .skill-item:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    transform: scale(1.05);
+  }
   .stats {
     display: flex;
     justify-content: center;
@@ -163,6 +175,11 @@
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 3px 3px 8px 1px gray;
   }
+  .achievement-item h3{
+    color: #1a237e;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
   .achievement-item:hover{
     /* background: linear-gradient(135deg, rgb(189, 221, 228), rgb(159, 179, 223)); */
     background-color: whitesmoke;
@@ -171,7 +188,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     box-shadow: 3px 3px 8px 1px gray;
   }
-  
+  .achievement-item:nth-child(odd) {
+    filter: brightness(1.03);
+  }
+  .achievement-item:nth-child(even) {
+    filter: brightness(0.97);
+  }
   .achievement-item img {
     width: 50px;
     height: 50px;
@@ -185,7 +207,7 @@
     color: white;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   }
   .learn-more:hover{
@@ -241,8 +263,38 @@
   border-color: rgb(208 208 210);
 }
   
+.container{
+  display: flex;
+  margin-top: 3rem;
+}
+.language{
+  padding: 10px;
+}
+.language li {
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  background-color: rgb(159, 179, 223); /* Primary color */
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 0.75rem 1rem;
+  border-radius: 8px; /* Rounded corners for a modern look */
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+  background: linear-gradient(135deg, rgb(159, 179, 223), rgb(189, 221, 228));
+  /* background: linear-gradient(to right, #a9d6e5, #bde0fe); */
 
-
+}
+.icon {
+  margin-right: 1rem; /* Space between icon and text */
+  font-size: 1.5rem; /* Larger icon size */
+}
+.language li:hover {
+  transform: translateY(-3px); /* Slight upward movement on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  background-color: rgb(159, 179, 223);
+  color: white;
+}
   /* Responsive Styles */
   @media (max-width: 768px) {
     .hero-content{
